@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Pub date</th>
+      <th>Url</th>
+      <th>Category</th>
+      <th>Author</th>
+      <th>Image</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pages.each do |page| %>
+      <tr>
+        <td><%= page.title %></td>
+        <td><%= page.content %></td>
+        <td><%= page.pub_date %></td>
+        <td><%= page.url %></td>
+        <td><%= page.category %></td>
+        <td><%= page.author %></td>
+        <td><%= page.image %></td>
+        <td><%= page.source %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
